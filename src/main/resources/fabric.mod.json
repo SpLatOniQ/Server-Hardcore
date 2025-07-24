@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "serverhc",
+	"version": "${version}",
+	"name": "Server Hardcore",
+	"description": "Resets the world if any of the players die.",
+	"authors": [
+		"SpLatOniQ"
+	],
+	"contact": {
+		"homepage": "https://linktr.ee/SpLatOniQ",
+		"sources": "https://github.com/SpLatOniQ"
+	},
+	"license": "MIT",
+	"icon": "assets/serverhc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"server": [
+			"splat.serverhc.ServerHardcore"
+		]
+	},
+	"mixins": [
+		{
+			"config": "serverhc.mixins.json",
+			"environment": "server"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21"
+	}
+}
